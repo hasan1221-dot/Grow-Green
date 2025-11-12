@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Grow Green.css">
+    <title>Greenforge — Grow Green</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="project pictures/image.png" alt="Greenforge logo" class="logo">
+                <a href="#" class="brand-name">Greenforge</a>
+            </div>
+            <nav class="main-nav" aria-label="Asosiy menyu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#shop" class="nav-link">Shop</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#cart" class="nav-link cart">👜</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Ochish">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h1>Grow <span>Green</span>, Get <span>rooted</span></h1>
+                    <p class="lead">Cultivate happiness, one plant at a time. Shop our collection and discover the joy of nature, indoors & out.</p>
+                    <a href="#shop" class="btn primary">Shop Now</a>
+                </div>
+                <div class="hero-image">
+                    <img src="project pictures/barg.png" alt="Plant" />
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="products container">
+            <h2>Featured Plants</h2>
+            <div class="product-grid">
+                <article class="product">
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Plant 1">
+                    <h3>Monstera Deliciosa</h3>
+                    <p class="price">$29</p>
+                    <a class="btn" href="#">Buy</a>
+                </article>
+                <article class="product">
+                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=800&auto=format&fit=crop" alt="Plant 2">
+                    <h3>Fiddle Leaf Fig</h3>
+                    <p class="price">$49</p>
+                    <a class="btn" href="#">Buy</a>
+                </article>
+                <article class="product">
+                    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800&auto=format&fit=crop" alt="Plant 3">
+                    <h3>Snake Plant</h3>
+                    <p class="price">$19</p>
+                    <a class="btn" href="#">Buy</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <h2>About Greenforge</h2>
+            <p>Greenforge — o'simliklar va bog'bonlik mahsulotlarini sevuvchilar uchun. Biz sifatli o'simliklar, parvarish bo'yicha maslahatlar va tez yetkazib berish taklif etamiz.</p>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="#" method="post">
+                <label>
+                    Ism
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Xabar
+                    <textarea name="message" rows="4" required></textarea>
+                </label>
+                <button class="btn primary" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Greenforge. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Twitter">TW</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    document.querySelector('#year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+</script>
+</body>
+</html>
